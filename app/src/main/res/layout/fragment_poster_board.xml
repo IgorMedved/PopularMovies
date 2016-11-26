@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.popularmovies.PosterBoardFragment">
+
+
+    <GridView
+        android:id="@+id/fragment_posters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@android:dimen/thumbnail_height"
+        android:minWidth="@android:dimen/thumbnail_width"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>
