@@ -20,37 +20,36 @@
             android:layout_height="wrap_content"
             android:id="@+id/poster_image_text"/>
     </FrameLayout>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_below="@id/poster_image_frame">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/synopsys_text"
-            tools:text="Test"/>
-    </ScrollView>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_marginLeft="8dp"
         android:gravity="top"
         android:layout_toRightOf="@id/poster_image_frame">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@android:style/TextAppearance.Large"
             android:id="@+id/title_text"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/release_date_text"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rating_text"
-            android:gravity="left"/>
+            tools:text="Test"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/synopsys_text"/>
+        </ScrollView>
     </LinearLayout>
+
 </RelativeLayout>
+

@@ -1,6 +1,26 @@
 <resources>
     <string name="app_name">Popular Movies</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="picture_error">Can not download poster from internet</string>
+
+
+    <string name="tmdb_api_base">http://api.themoviedb.org/3/movie/</string>
+    <string name="tmdb_posters_base">http://image.tmdb.org/t/p/</string>
+
+    <string name="refresh">Refresh</string>
+    <!-- strings for order settings -->
+    <string name="settings">Settings</string>
+    <string name="pref_order_by_label">Order Movies By</string>
+    <string name="pref_order_by_key">order</string>
+    <string name="pref_order_popular">popular</string>
+    <string name="pref_order_rating">top_rated</string>
+    <string name="pref_order_default">@string/pref_order_popular</string>
+    <string-array name="order_labels">
+        <item>Popularity</item>
+        <item>User Rating</item>
+    </string-array>
+    <string-array name="order_values">
+        <item>@string/pref_order_popular</item>
+        <item>@string/pref_order_rating</item>
+    </string-array>
 </resources>

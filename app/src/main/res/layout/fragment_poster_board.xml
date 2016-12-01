@@ -1,16 +1,19 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    tools:context="com.example.popularmovies.PosterBoardFragment"
     android:layout_height="match_parent"
-    tools:context="com.example.popularmovies.PosterBoardFragment">
-
-
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_main_text"
+        android:gravity="center"/>
     <GridView
         android:id="@+id/fragment_posters"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:minHeight="@android:dimen/thumbnail_height"
-        android:minWidth="@android:dimen/thumbnail_width"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent" />
+</RelativeLayout>
 
-</FrameLayout>
+
